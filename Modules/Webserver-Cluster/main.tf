@@ -3,6 +3,7 @@
 locals {
     http_port = 80
     ssh_port = 22
+    http2_port = 8080
     any_port = 0
     any_portocol = "-1"
     tcp_protocol = "tcp"

@@ -7,8 +7,8 @@ provider "aws" {
 
 module "webserver_cluster" {
 
-source = "/Users/stbates/Desktop/New_Terraform_Training/Modules/Webserver-Cluster"
-
+#source = "/Users/stbates/Desktop/New_Terraform_Training/Modules/Webserver-Cluster"
+ source = "github.com/stedmon8/terraform-repo//Modules/Webserver-Cluster?ref=v0.0.1"
 cluster_name = "webservers-stage"
 db_remote_state_bucket = "terraform-up-and-running-state-sted"
 db_remote_state_key = "Data-Store/staging/terraform.tfstate"
